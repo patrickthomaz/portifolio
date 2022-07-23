@@ -4,27 +4,58 @@
         <style>
             body {
                 font-family: sans-serif;
+                color: #333333;
                 margin: 50px 100px;
                 background-color: whitesmoke;
             }
             div {
                 padding: 5px;
                 background-color: rgb(250, 250, 250);
-                box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+             }
+            span { /* apenas dentro do local indicado */
+                color: #354f65;
+            }
+            .footer {
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                color:dimgrey;
+            }
+            .row {  /* organizar em uma linha */
+                display: flex;
+            }
+            .left { /* cria uma classe chamada left que ocupará 40% da área disponível */
+                width: 40%;
+            }
+            .right {
+                width: 60%;
+                padding-left: 20px;
             }
         </style>
     </head>
     
     <body>
-        <div>
-            <h3>Layout com barra lateral</h3>
-            <p><a href="https://patrickthomaz.github.io/sidebar/" target="_blank"><img src="sidebar.png", width="450"></a></p>
+        <div class="row">
+            <div class="left">
+                <p><a href="https://patrickthomaz.github.io/sidebar/" target="_blank"><img src="sidebar.png", width="450"></a></p>
+            </div>
+            <div class="right">
+                <h3><span>Layout com barra lateral</span></h3>
+            </div>
         </div>
-        <br>
-        <br>
-        <div>
-            <h3>Layout com mapa em tela cheia</h3>
-            <p><a href="https://patrickthomaz.github.io/fullscreen/"target="_blank">Full screen</a></p>
+        
+        <div class="row">    
+            <div class="left">
+                <p><a href="https://patrickthomaz.github.io/fullscreen/"target="_blank"><img src="fullscreen.png", width="450"></a></p>
+            </div>
+            <div class="right">
+                <h3>Layout com mapa em tela cheia</h3>
+            </div>
+            
+        <div class="footer">
+            <img src="map-svgrepo-com.svg" alt="ícone" style="float:left;width:25px;height:25px;padding-top: 5px;">
+            <p style="padding-left: 30px;font-size: 12px">By Patrick T. de A. Martins</a></p>
         </div>
     </body>
 </html> 
